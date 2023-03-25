@@ -1,38 +1,93 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto+Slab:100,300,400,700");
+
+:root {
+    --font-roboto: "Roboto Slab", serif;
+}
+
+body {
+    font-family: var(--font-roboto);
+    background-color: #212121;
+    margin: 0;
+}
+
+.App-Container {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
 .App {
-  text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: auto;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.name-text {
+    margin-top: 0;
+    color: rgb(219, 198, 238);
+    font-size: 60px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.icons {
+    display: flex;
+    justify-content: center;
+    font-size: 16px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.icon {
+    margin: 10px;
+    text-decoration: none;
+    color: white;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-left: 70px;
+    margin-right: 70px;
 }
 
-.App-link {
-  color: #61dafb;
+.icon-image {
+    height: auto;
+    width: 90px;
+    transition: 200ms;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.icon-image:hover {
+    opacity: 30%;
+}
+
+.icon-text {
+    margin-bottom: 0;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.backdrop {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: #000000e1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.window {
+    width: clamp(50%, 700px, 90%);
+    height: min(50%, 300px);
+    margin: auto;
+    padding: 0 2rem;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.motion-button {
+    border: none;
+    background-color: transparent;
 }

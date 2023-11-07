@@ -105,7 +105,7 @@ body {
 .name-text {
     margin-top: 0;
     color: rgb(219, 198, 238);
-    font-size: 60px;
+    font-size: 70px;
     opacity: 0;
     animation: fadeDownIn ease 3s;
     animation-fill-mode: forwards;
@@ -134,16 +134,21 @@ body {
     margin-right: 70px;
 }
 
-#linkedin {
-    animation-delay: 2500ms;
-}
 
 #github {
     animation-delay: 2000ms;
 }
 
-#about {
+#linkedin {
+    animation-delay: 2500ms;
+}
+
+#project {
     animation-delay: 3000ms;
+}
+
+#about {
+    animation-delay: 3500ms;
 }
 
 .icon-image {
@@ -188,4 +193,28 @@ body {
 .motion-button {
     border: none;
     background-color: transparent;
+}
+
+.purple-page {
+    background-color: rgb(219, 198, 238);
+    color: #212121;
+    height: 100vh;
+}
+
+.about-title {
+    padding: 10vh;
+    font-size: 30px;
+}
+
+.about-body {
+    padding-left: 10vh;
+    padding-right: 10vh;
+    padding-bottom: 10vh;
+    line-height: 2;
+}
+
+.gray-page {
+    background-color: #212121;
+    color: rgb(219, 198, 238);
+    height: 100vh;
 }
